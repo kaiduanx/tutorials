@@ -115,7 +115,7 @@ public class CommodityServer {
         }
 
         @Override
-        public StreamObserver<Commodity> bidirectionalListOfPrices(StreamObserver<StreamingCommodityQuote> responseObserver) {
+        public StreamObserver<Commodity> bidirectionalListOfPrices(final StreamObserver<StreamingCommodityQuote> responseObserver) {
 
             return new StreamObserver<Commodity>() {
                 @Override
